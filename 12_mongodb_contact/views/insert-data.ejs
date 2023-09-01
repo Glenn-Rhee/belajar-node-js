@@ -1,0 +1,50 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <% if (typeof errors != 'undefined') { %>
+      <div class="alert alert-danger" role="alert">
+        <h4>Gagal ditambahkan</h4>
+        <ul>
+          <% errors.forEach(error => { %>
+          <li><%= error.msg %></li>
+          <% }) %>
+        </ul>
+      </div>
+      <%}%>
+      <form method="post" action="/contacts">
+        <div class="mb-3">
+          <label for="nama" class="form-label">Nama</label>
+          <input
+            type="text"
+            class="form-control"
+            id="nama"
+            name="nama"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="jurusan" class="form-label">Jurusan</label>
+          <select class="form-select" id="inputGroupSelect01" name="jurusan">
+            <option selected value="Choose...">Choose...</option>
+            <% allJurusan.forEach(jurusan => { %>
+            <option value="<%= jurusan %>"><%= jurusan %></option>
+            <% }) %>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            name="email"
+            placeholder="example@gmail.com"
+            required
+          />
+        </div>
+        <a href="/contacts" class="btn btn-warning badge">Kembali</a>
+        <button type="submit" class="btn btn-primary badge">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>

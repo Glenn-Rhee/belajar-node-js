@@ -1,0 +1,66 @@
+MongoDB 
+MongoDB (Hu"mongo"us Database)
+MongoDB adalah sebuah database berbasis dokumen yang memiliki skalabilitas dan fleksibilitas yang kita inginkan dan juga memiliki fitur query dan indexing yang kita butuhkan
+
+Apa itu database berbasis document?
+Database berbasis document adalah sebuah database yang tidak menggunakan table untuk pengelolaan databasenya. Database ini merupakan salah satu dari tipe NoSQL Database.
+
+NoSQL Database : 
+1. "Not Only" SQL, merupakan suatu perilaku database yang bisa melakukan sama seperti SQL namun bisa juga lebih 
+
+2. Schemaless / flexible schema, karena NoSQL Database bentuknya bukan table maka colomnya juga tidak menentu. Suatu colom pada sebuah data bisa berbeda", jadi fieldnya tidak konsisten.
+
+3. Denormalization, karena tipe data maupun panjang datanya tidak di definisikan atau di deklarasikan maka tipe data atau panjang datanya bebas diisi apa aja atau berapa aja.
+
+4. Non-relational Database. Tidak memiliki relasi terhadap satu field dengan field yang lain. Jadi tidak ada konsep primary key dll
+
+5. Unstructured, semi-structured, structured data. Karena Schemaless data yang disimpan di database MongoDB bisa tidak terstruktur, semi struktur, atau bahkan data yang terstruktur
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+Tipe NoSQL Database 
+1. Key-value Store, contohnya 
+	1. Redis
+2. Document Based, contohnya
+	1. MongoDB 
+	2. CouchDB
+3. Column-oriented Database
+	1. HBase
+	2. Cassandra
+4. Graph Database 
+	1. Neo4J
+
+
+========================================================================================
+
+Perbedaan istilah/penyebutan antara MongoDB(NoSQL) dan SQL(MySQL) :
+1. 
+SQL : Tempat penyimpanannya disebut dengan Database
+NoSQL : Tempat penyimpanannya disebut dengan Database
+
+2. 
+SQL : Bentuk datanya berupa table. Kumpulan data itu disebut dengan table
+NoSQL : Bentuk datanya tidak berupa table, melainkan mirip atau bahkan sama seperti format JSON. Kumpulan data - data itu disebut dengan Collection
+
+3. 
+SQL : Satu buah data disebut dengan "row"/"record"
+No SQL : Satu buah data disebut dengan "document" bentuk document ini merupakan bentuk object
+
+4. 
+SQL : Satu judul pada bagian headtable disebut dengan column/field
+No SQL : Satu judul / key pada document disebut dengan field
+
+
+========================================================================================
+
+Konsep Embedded Document (Denormalization)
+Singkatnya merupakan suatu konsep yang jumlah field dari semua documentnya berbeda - beda.
+
+----------------------------------------------------------------------------------------
+
+NodeJS dapat terhubung banyak Database
+
+Kenapa Menggunakan MongoDB 
+1. JSON (BSON), lebih mudah mengelola karena terbiasa menggunakan javascript
+2. JavaScript, karena bentuknya JSON maka dia adalah JavaScript. Jadi bisa lebih di lengkapi lagi pemahaman JavaScriptnya. Tidak perlu mempelajari bahasa baru 
+3. MERN(MongoDB, Express, React, NodeJS), MEVN(MongoDB, Express, Vue, NodeJS), MEAN(MongoDB, Express, Angular, NodeJS). Hampir lengkap mempelajari fullstack Javascript 

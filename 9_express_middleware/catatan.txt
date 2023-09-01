@@ -1,0 +1,20 @@
+Middleware adalah sebuah software yang menghubungkan software atau aplikasi lain
+
+Contoh Middleware : 
+1. Database
+2. Web Server
+3. Game Engine
+4. Web Application
+
+Express Middleware adalah aplikasi Express itu sebenarnya berisi serangkaian pemanggilan fungsi Middleware
+
+Fungsi Middleware adalah sebuah fungsi yang memiliki akses ke object request (req), object response (res), dan fungsi middleware berikutnya (next).
+
+Express Middleware :
+1. User-defined middleware 
+    1. Application-level middleware
+    2. Router-level middleware
+    3. error-handling middleware
+
+2. Built-in middleware
+3. Third-party middleware

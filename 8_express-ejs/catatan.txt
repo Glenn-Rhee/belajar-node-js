@@ -1,0 +1,11 @@
+Express View Engine/Template Engine 
+1. Memungkinkan membuat file template statis untuk aplikasi
+2. ENgine tersebut mengganti varible pada template kita dengan nilai sebenarnya, lalu menampilkannya dalam bentuk HTML
+
+EJS (Embedded JavaScript Template)
+1. Simple Syntax
+2. SImple setup
+3. Speedy Execution
+4. Easy Debugging
+5. Active Development
+6. DIbuat oleh pembuat Express

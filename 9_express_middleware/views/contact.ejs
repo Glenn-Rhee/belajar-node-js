@@ -1,0 +1,10 @@
+<h1>Ini adalah halaman Contact</h1>
+<% if (mahasiswa.length < 1) { %>
+<p>Belum ada mahasiswa</p>
+<% } %> <% mahasiswa.forEach(mhs => { %>
+<ul>
+  <li>Nama : <%= mhs.nama %></li>
+  <li>Jurusan : <%= mhs.jurusan %></li>
+  <li>Email : <%= mhs.email %></li>
+</ul>
+<% }); %>

@@ -1,0 +1,44 @@
+<h3 class="mt-3">Daftar Mahasiswa Universitas Indonesia</h3>
+
+<table class="table">
+  <% if (contacts.length === 0) { %>
+  <tr>
+    <td colspan="5">
+      <div class="alert alert-danger fs-3 text-center" role="alert">
+        <p class="fw-bold">Contact masih kosong</p>
+      </div>
+    </td>
+  </tr>
+  <% } %>
+  <thead>
+    <tr>
+      <th scope="col">No</th>
+      <th scope="col">Nama</th>
+      <th scope="col">Jurusan</th>
+      <th scope="col">Detail</th>
+      <th scope="col">Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% contacts.forEach((contact, i) => { %>
+    <tr>
+      <th scope="row"><%= i + 1 %></th>
+      <td><%= contact.nama %></td>
+      <td><%= contact.jurusan %></td>
+      <td>
+        <a
+          href="/contacts/<%= contact.id %>"
+          class="btn btn-info badge rounded-pill"
+          >Detail</a
+        >
+      </td>
+      <td>
+        <a href="/contacts/delete/<%= contact._id %>" class="btn btn-danger badge rounded-pill" onclick="return confirm('Yakin ingin menghapus data ini?')">Delete</a>
+      </td>
+    </tr>
+    <% }) %>
+  </tbody>
+</table>
+<a href="/contacts/add" class="btn btn-primary rounded-pill" id="insert"
+  >Insert</a
+>

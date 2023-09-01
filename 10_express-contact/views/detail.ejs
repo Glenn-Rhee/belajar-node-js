@@ -1,0 +1,25 @@
+<div class="container mt-3">
+  <div class="row">
+    <div class="col-md-8">
+      <% if (!contact) { %> <% if (nama.length === 0) { %>
+      <div class="alert alert-danger" role="alert">
+        <p class="fw-bold">Contact Tidak ditemukan</p>
+        <a href="/contacts" class="alert-link fw-normal">Kembali</a>
+      </div>
+      <% } %> <% }else { %>
+      <h4>Detail Contact <%= nama[0] %></h4>
+      <div class="card" style="width: 18rem">
+        <div class="card-body">
+          <h5 class="card-title"><%= contact.nama %></h5>
+          <h6 class="card-subtitle mb-2 text-body-secondary">
+            <%= contact.jurusan%>
+          </h6>
+          <p class="card-text"><%= contact.email %></p>
+          <a href="/contacts" class="card-link btn btn-warning badge">Back</a>
+          <a href="/contacts/edit/<%= contact.nama %>" class="card-link btn btn-info badge">Edit</a>
+        </div>
+      </div>
+      <% } %>
+    </div>
+  </div>
+</div>

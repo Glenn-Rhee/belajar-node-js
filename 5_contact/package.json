@@ -1,0 +1,15 @@
+{
+  "name": "5_contact",
+  "version": "1.0.0",
+  "description": "Belajar Contact",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ariel Rizki Muhtamad Bakri",
+  "license": "ISC",
+  "dependencies": {
+    "validator": "^13.9.0",
+    "yargs": "^17.7.2"
+  }
+}

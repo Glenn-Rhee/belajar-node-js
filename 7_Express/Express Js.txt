@@ -1,0 +1,14 @@
+Express Js
+Fast Unopinionated minimalist web framework for nodeJS.
+
+ExpressJS adalah : 
+1. Web App Framework yang dibuat di atas NodeJS.
+2. Menyediakan antarmuka yang minimal untuk kakas yang diperlukan dalam membaut sebuah aplikasi web.
+3. Membantu pengelolaan aliraan data dari server ke aplikasi.
+4. MERN, MEAN, MEVN Stack (MongoDB, ExpressJS, React | Angular | Vue, NodeJS).
+
+Fitur ExpressJS :
+1. Menangani request dengan berbagai metode HTTP dengan mudah (Routes).
+2. MVC (Model-View-Controller).
+3. Terintegrasi dengan "view" rendering engine, untuk mengelola template.
+4. Middleware.
